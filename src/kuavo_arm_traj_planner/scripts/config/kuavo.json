@@ -1,0 +1,35 @@
+{
+    "node_name"                     : "kuavo_arm_traj_plan",
+    "l_group_name"                  : "r_arm_group",
+    "r_group_name"                  : "l_arm_group",
+
+    "planner_id"                    : "RRTstar",
+    "planning_frame"                : "base_link",
+    "num_planning"                  : 3,
+    "acceleration_scaling_factor"   : 0.5,
+    "velocity_scaling_factor"       : 0.5,
+    "planning_time"                 : 3,
+    "target"                        : "target",
+    "support"                       : "support",
+
+    "l_group"                       : [
+                                        "l_arm_pitch",
+                                        "l_arm_roll",
+                                        "l_arm_yaw",
+                                        "l_forearm_pitch",
+                                        "l_forearm_yaw",
+                                        "l_hand_roll",
+                                        "l_hand_pitch"
+                                      ],
+    "r_group"                       : [
+                                        "r_arm_pitch",
+                                        "r_arm_roll",
+                                        "r_arm_yaw",
+                                        "r_forearm_pitch",
+                                        "r_forearm_yaw",
+                                        "r_hand_roll",
+                                        "r_hand_pitch"
+                                      ],
+    "l_gripper"                     : ["l_font_finger", "l_back_finger"],
+    "r_gripper"                     : ["r_font_finger", "r_back_finger"]
+}

@@ -1,0 +1,6 @@
+# IDE File
+.vscode/
+*.pyc
+
+# Mac File
+*.DS_Store

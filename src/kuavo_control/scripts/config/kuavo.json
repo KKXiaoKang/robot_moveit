@@ -1,0 +1,15 @@
+{
+    "node_name"                     : "kuavo_arm_traj_plan",
+    "group_name"                    : "kuavo_arm_group",
+
+    "planner_id"                    : "RRTstar",
+    "planning_frame"                : "base_link",
+    "num_planning"                  : 3,
+    "acceleration_scaling_factor"   : 0.5,
+    "velocity_scaling_factor"       : 0.5,
+    "planning_time"                 : 3,
+    "target"                        : "target",
+    "support"                       : "support",
+
+    "gripper"                       : ["l_font_finger", "l_back_finger"]
+}

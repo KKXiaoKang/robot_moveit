@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kuavo_with_finger
+    relative_path: urdf/kuavo_with_finger.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/kuavo_with_finger.srdf
+  CONFIG:
+    author_name: kuavo
+    author_email: 2713625322@qq.com
+    generated_timestamp: 1704940885

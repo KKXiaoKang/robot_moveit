@@ -1,0 +1,34 @@
+controller_list:
+  - name: fake_l_arm_group_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - l_arm_pitch
+      - l_arm_roll
+      - l_arm_yaw
+      - l_forearm_pitch
+      - l_forearm_yaw
+      - l_hand_roll
+      - l_hand_pitch
+  - name: fake_r_arm_group_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - r_arm_pitch
+      - r_arm_roll
+      - r_arm_yaw
+      - r_forearm_pitch
+      - r_forearm_yaw
+      - r_hand_roll
+      - r_hand_pitch
+  - name: fake_l_end_effector_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - l_font_finger
+  - name: fake_r_end_effector_controller
+    type: $(arg fake_execution_type)
+    joints:
+      []
+initial:  # Define initial robot poses per group
+  - group: l_arm_group
+    pose: l_arm_init_pose
+  - group: r_arm_group
+    pose: r_arm_init_pose

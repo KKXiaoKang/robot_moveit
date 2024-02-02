@@ -1,0 +1,46 @@
+kuavo_arm_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - l_arm_pitch
+    - l_arm_roll
+    - l_arm_yaw
+    - l_forearm_pitch
+    - l_forearm_yaw
+    - l_hand_roll
+    - l_hand_pitch
+  gains:
+    l_arm_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    l_arm_roll:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    l_arm_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    l_forearm_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    l_forearm_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    l_hand_roll:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    l_hand_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
