@@ -7,7 +7,6 @@ from utils import dump_traj
 
 import math
 
-
 if __name__ == "__main__":
     core = Core()
     core.init_arm()
@@ -53,6 +52,26 @@ if __name__ == "__main__":
     
     """
 
+    joints = [-26/180*math.pi, 10/180*math.pi, 24/180*math.pi, 36/180*math.pi, 0/180*math.pi, 0/180*math.pi, 0/180*math.pi]
+    traj = core.goto_l_joint_config(joints)
+    dump_traj("traj/traj_l_zhuahua1.json", traj)
+
+    # joints = [-80/180*math.pi, 35/180*math.pi, 90/180*math.pi, 50/180*math.pi, 0/180*math.pi, 0/180*math.pi, 40/180*math.pi]
+    # traj = core.goto_l_joint_config(joints)
+    # dump_traj("traj/traj_l_zhuahua2.json", traj)
+
+    # joints = [-80/180*math.pi, 25/180*math.pi, 90/180*math.pi, 50/180*math.pi, 0/180*math.pi, 0/180*math.pi, 40/180*math.pi]
+    # traj = core.goto_l_joint_config(joints)
+    # dump_traj("traj/traj_l_zhuahua3.json", traj)
+
+    # joints = [-26/180*math.pi, 10/180*math.pi, -46/180*math.pi, 36/180*math.pi, 0/180*math.pi, 0/180*math.pi, 20/180*math.pi]
+    # traj = core.goto_l_joint_config(joints)
+    # dump_traj("traj/traj_l_zhuahua4.json", traj)
+
+    # joints = [-26/180*math.pi, 10/180*math.pi, -46/180*math.pi, 36/180*math.pi, 0/180*math.pi, 0/180*math.pi, 10/180*math.pi]
+    # traj = core.goto_l_joint_config(joints)
+    # dump_traj("traj/traj_l_zhuahua5.json", traj)
+
     """查看设计模板
 
     traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua1.json")
@@ -63,9 +82,9 @@ if __name__ == "__main__":
     
     """
     traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua1.json")
-    traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua2.json")
-    traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua3.json")
-    traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua4.json")
-    traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua5.json")
+    # traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua2.json")
+    # traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua3.json")
+    # traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua4.json")
+    # traj = core.goto_l_file_traj_config("traj/traj_l_zhuahua5.json")
     
 
